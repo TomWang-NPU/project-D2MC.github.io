@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Demonstration to Collaboration: A Framework for Multi-Robot Systems on Long-Horizon Tasks</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon_2.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">From Demonstration to Collaboration: A Framework for Multi-Robot Systems on Long-Horizon Tasks</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Mai Sun<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://harrycui.github.io">Helei Cui</a><sup>1</sup>,</span>
+            <span class="author-block">Baiqing Wang<sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://maggichk.github.io/">Xiaoning Liu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.crowdos.cn/yu/publication.htm">Zhiwen Yu</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.guob.org">Bin Guo</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Northwestern Polytechnical University</span>
+            <span class="author-block"><sup>2</sup>RMIT University</span>
+            <span class="author-block"><sup>3</sup>Harbin Engineering University</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<section class="hero teaser" style="margin-bottom: -1rem;">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <img src="./static/images/overflow.png"
+           alt="Framework Overflow"
+           style="width: 90%; height: auto;">
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As robotics expands into manufacturing, logistics, and services, long-horizon tasks (i.e., characterized by extended duration and complex subtask dependencies) pose significant perception and coordination challenges, especially in multi-robot systems. Current approaches, often reliant on single-source data or predefined task structures, struggle with task complexity and deployment heterogeneity, which hinders a transition from demonstrations to multi-robot collaboration. In this paper, we propose a multi-robot collaborative framework that builds on long-horizon task demonstrations, systematically addressing task segmentation, subtask modeling, and deployment-aware execution to enable multi-robot collaboration. Our method achieves robust subtask boundary detection by integrating visual features, global optical flow, and local motion cues. Subtasks are represented via structured preconditions and effects, enabling automated construction of a task dependency graph for sequential or parallel execution. A trajectory adaptation strategy aligns robot orientations through coordinate transformations for diverse deployments. We further present D2MCBenchmark, evaluating transitions from single- to multi-robot scenarios. Experiments demonstrate superior segmentation accuracy, dependency modeling, and execution efficiency, validating the effectiveness of the framework in adaptive, coordinated task execution. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Single Robot Demonstration</h2>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Nominal</h3>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="nominal" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Single Robot/demo_pack_single.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="human-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Single Robot/demo_sandwich_single.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="human-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Single Robot/demo_sort_single.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="human-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Single Robot/demo_cabinet_single.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Human Disturbance</h3>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="human-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back/demo_back_pack.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="human-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back/demo_back_sandwich.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="human-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back/demo_back_sort.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="human-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back/demo_back_cabinet.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Robot Disturbance</h3>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="robot-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back_robot/demo_back2_pack.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="robot-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back_robot/demo_back2_sandwich.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="robot-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back_robot/demo_back2_sort.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="robot-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/back_robot/demo_back2_cabinet.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Camera Shake</h3>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="shake-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dou/dou_pack_fixed.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="shake-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dou/dou_sandwich_fixed.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="shake-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dou/dou_sort_fixed.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="shake-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dou/dou_cabinet_fixed.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Low-light</h3>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="light-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dirty/demo_dirty_pack.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="light-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dirty/demo_dirty_sandwich.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="light-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dirty/demo_dirty_sort.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="light-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dirty/demo_dirty_cabinet.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Multi-Robot Collaboration</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="multi-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Multiple Robots/demo_pack_multi.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="multi-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Multiple Robots/demo_sandwich_multi.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="multi-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Multiple Robots/demo_sort_multi.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <video id="multi-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Multiple Robots/demo_cabinet_multi.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
